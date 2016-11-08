@@ -11,15 +11,16 @@ public class Main {
         int u = 20;
         int k = 7;
         int round = 0;
-        int totalTries = 100;
+        int totalTries = 10000;
 
         for (int i = 0; i < totalTries; i++) {
             round = mimi.getRoundsFor(u, k, 1);
             total1Rounds += round;
-            round = mimi.getRoundsFor(u, k, 100);
+           /** round = mimi.getRoundsFor(u, k, 100);
             total100Rounds += round;
             round = mimi.getRoundsFor(u, k, 10000);
             total10kRounds += round;
+            */
             System.out.println(i);
         }
 
